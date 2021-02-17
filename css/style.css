@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  p {
+    line-height: 28px;
+  }
+  
+  body {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+  }
+  
+  .img_responsive {
+    width: 100%;
+  }
+  #main_header {
+    /* background: #ccc; */
+    height: 88px;
+  }
+  
+  #main_header .container {
+    position: relative;
+  }
+  
+  #main_header .container > h1 {
+    position: absolute;
+    left: 0; top: 25px;
+  }
+  
+  #gnb {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    /* z-index 추가 */
+    z-index: 999;
+  }
+  
+  /* 1단계 메뉴 */
+  #gnb > ul.depth1 > li {
+    float: left;
+    width: 110px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  #gnb > ul.depth1 > li:last-child {
+    margin-right: 0;
+  }
+  
+  /* 2단계 메뉴 */
+  #gnb ul.depth2 {
+    outline: 1px solid rgba(0,0,0,0.2);
+    margin-top: 32px;
+    padding: 20px 10px;
+    display: none;
+  }
+  
+  #gnb ul.depth2 > li {
+    line-height: 2em;
+    font-size: 16px;
+  }
+  
+  #gnb ul.depth1 > li > a:hover,
+  #gnb ul.depth2 > li > a:hover  {
+    color: #009d42;
+  }
+  
+  #main_visual {
+    position: relative;
+    width: 100%; height: 620px;
+    /*outline: 2px solid red;*/
+    margin: 0 auto;
+  }
+  
+  #main_visual .swiper-container {
+    width: 1920px; height: 620px;
+    /*border: 2px solid green;*/
+    position: absolute;
+    left: calc(50% - (1920px / 2));
+  }
+  
+  /* 화살표 위치 조정 */
+  .container1400 {
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    /*outline: 2px solid red;*/
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: translateY(-300px);
+    color: white;
+  }
+  
+  /* 컬러 변경*/ 
+  .swiper-pagination-bullet {
+  
+  }
+  .swiper-pagination-bullet-active {
+    background: white;
+  }
+  
+  #vision {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #vision .container .col_5 {
+      padding-bottom: 100px;
+    
+      margin-top: 100px;
+  }
+  
+  #vision h2 {
+    font-weight: normal;
+    font-size: 34px;
+    margin-bottom: 25px;
+  }
+  #vision h2 span { 
+    font-weight: bold;
+  }
+  
+  .btn-detail {
+    width: 182px; height: 48px;
+    border: 2px solid #0333;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin-top: 60px;
+  }
+
+  #vision a:hover {
+    background: rgba(0,0,0,0.2);
+    color: white;
+    border: none;
+  }
+
+#product {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#product h2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#product p:hover {
+  color: #009d42;
+  border:  #009d42;
+}
+
+#ir {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;  
+  background: #ccc;
+  background: url('../imges/stock.jpg');
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+#ir h2 { margin-bottom: 40px;}
+
+#ir .btn-detail {
+  display: inline-block;
+  border-color: #fff;
+  color: #fff;
+}
+#ir .btn-detail:hover {
+  background: #fff;
+  color: #000;
+}
+/*footer*/
+
+#main_footer {
+  background: #333;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+}
+#main_footer .address,
+#main_footer .info {
+  margin-bottom: 10px;
+}
